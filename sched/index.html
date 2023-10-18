@@ -1,0 +1,276 @@
+<html>
+    <head>
+<title>
+    Schedule
+</title>
+<link rel="stylesheet" href="../index.css">
+<style>
+  
+    table {
+        margin: auto;
+        margin-top: 50px;
+        height: 90%;
+        border-collapse: collapse;
+        width: 90%;
+        border: 10px solid #424242;
+        border-radius: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    #mis{
+        background-color: #BB86FC;
+    }
+    #sql{
+        background-color: #03DAC6;
+    }
+    #hardware{
+        background-color: #FF0266;
+    }
+    #time{
+        color: white;
+        background-color: var(--primary);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #fdfdfd;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: var(--third);
+       
+    }
+    td {
+        padding: 12px 15px;
+        text-align: center;
+        border-bottom: 1px solid var(--third);
+        border-top: 1px solid var(--third);
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: var(--accent);
+        transition: 0.3s ease-in-out;
+    }
+    td:hover{
+        cursor: pointer;
+        background-color: var(--light_third);
+    }
+    th {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 12px 15px;
+        background-color: var(--fourth);
+        font-weight: bold;
+        border-right: 1px solid #424242;
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    tr:hover {
+        background-color: #1F1B24;
+    }
+    td {
+        font-size: 14px;
+        color: #FFFFFF;
+        border-right: 1px solid #424242;
+    }
+    h1 {
+        font-family: verdana, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        top: -10px;
+      }
+ 
+      
+      #btn1 {
+        top: 100px;
+      }
+      
+      #btn2 {
+        top: 200px;
+      }
+      
+      #btn3 {
+        top: 300px;
+      }
+      
+      div.button {
+        background-color: var(--primary);
+        color: var(--text);
+        border: none;
+        border-radius: 30px;
+        width: 500px;
+        height: 60px;
+        position: fixed;
+        left: -435px;
+        transition: .7s ease;
+      }
+      
+      div.button:hover {
+        background-color: var(--accent);
+        position: fixed;
+        left: -50px;
+        width: 600px;
+        border-radius: 0px;
+        box-shadow: 0px 5px 0px #c0392b;
+        color: var(--text);
+      }
+      
+      div.button:active {
+        background-color: var(--secondary);
+        transition: 0s;
+        color: var(--text);
+      }
+</style>
+
+
+    </head>
+    <body>
+        <a href="../index.html">
+            <div id="btn1" class="button">
+              <h1>HOME</h1>
+            </div>
+          </a>
+          
+          <a href="../index.html#portfolio">
+            <div id="btn2" class="button">
+              <h1>Activities</h1>
+            </div>
+          </a>
+          
+          <a href="../index.html#about">
+            <div id="btn3" class="button">
+              <h1>ABOUT ME</h1>
+            </div>
+          </a>
+        <table>
+            <tr>
+                <th style="width: 100px;">TIME</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATERDAY</th>
+            </tr>
+            <tr>
+                <td id="time" >7:00 - 8:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="time" >8:00 - 9:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="time" >9:00 - 10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3" class="sub" id="sql" ><a href="sql.html">information Management (sql)</a></td>
+                <td rowspan="3" class="sub" id="hardware" ><a href="software.html">Software and Hardware Installation</a></td>
+            </tr>
+            <tr>
+                <td id="time" >10:00 - 11:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+
+            </tr>
+            <tr>
+                <td id="time" >11:00 - 12:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+
+            </tr>
+            <tr>
+                <td id="time" >12:00 - 1:00</td>
+                <td colspan="6" style="text-align: center; background-color: #d84b57;">LUNCH TIME</td>
+                
+            </tr>
+            <tr>
+                <td id="time" >1:00 - 2:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3" class="sub" id="mis" > <a href="mis.html">management information System</a></td>
+                <td rowspan="3" class="sub" id="accounts" style="background-color: #539669;"> <a href="accounts.html">Fundamentals of Accounting</a></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="time" >2:00 - 3:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+
+            </tr>
+            <tr>
+                <td id="time" >3:00 - 4:00</td>
+                <td></td>               
+                <td></td>
+                <td></td>
+                <td rowspan="3" class="sub" id="pe3" style="background-color: #5d88ac;"> <a href="PE3.html">Rythmic activities</a></td>
+
+            </tr>
+            <tr>
+                <td id="time" >4:00 - 4:30</td>
+                <td style="background-color: #8695bd;" rowspan="2" class="sub" id="software"> <a href="engineer.html">Software engineering</a></td>
+                
+                <td></td>
+                <td style="background-color: #8695bd;" rowspan="2" class="sub" id="software"><a href="engineer.html">Software engineering</a></td>
+                <td></td>
+               
+                <td></td>
+                
+
+                
+
+            </tr>
+            <tr>
+                <td id="time" >4:30 - 5:00</td>
+                <td style="background-color: #b685bd;" rowspan="2" class="sub" id="Programming"> <a href="comprog.html">Com Prog 4 (Web programming and design)</a></td>
+
+                <td style="background-color: #b685bd;" rowspan="2" class="sub" id="programming"> <a href="comprog.html">Com Prog 4 (Web programming and design)</a></td>
+                <td></td>
+                
+
+                
+
+            </tr>
+            <tr>
+                <td id="time" >5:00 - 6:00</td>
+                <td style="background-color: #75beb8;" class="sub" id="data"><a href="data.html">Data Communications and Networking</a></td>
+                <td style="background-color: #75beb8;" class="sub" id="data"><a href="data.html">Data Communications and Networking</a></td>
+                <td style="background-color: #75beb8;" class="sub" id="data"><a href="data.html">Data Communications and Networking</a></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td id="time" border-bottom-left-radius: 20px;">6:00 - 7:00</td>
+                <td style="background-color: #c4617a;" class="sub" id="soc"> <a href="socscie.html">Sociology with Pop. ed. And Drug prevention</a></td>
+                <td></td>
+                <td style="background-color: #c4617a;" class="sub" id="soc"> <a href="socscie.html">Sociology with Pop. ed. And Drug prevention</a></td>
+                <td></td>
+                <td style="background-color: #c4617a; " class="sub"id="soc"> <a href="socscie.html">Sociology with Pop. ed. And Drug prevention</a></td>
+                <td style="border-bottom-right-radius: 20px;"></td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
